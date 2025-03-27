@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin: 8px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-actions {
+            text-align: center;
+        }
+        .form-actions input {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-actions input:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Internship Application Form</h1>
+    <form action="#" method="post">
+        <!-- Personal Information Section -->
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+        </div>
+
+        <!-- Educational Information Section -->
+        <div class="form-group">
+            <label for="university">University/College Name:</label>
+            <input type="text" id="university" name="university" required placeholder="Enter your university/college name">
+        </div>
+
+        <div class="form-group">
+            <label for="degree">Degree Program:</label>
+            <input type="text" id="degree" name="degree" required placeholder="Enter your degree program">
+        </div>
+
+        <div class="form-group">
+            <label for="year">Year of Study:</label>
+            <input type="number" id="year" name="year" required placeholder="Enter your current year of study">
+        </div>
+
+        <!-- Internship Preferences Section -->
+        <div class="form-group">
+            <label for="internshipType">Type of Internship:</label>
+            <select id="internshipType" name="internshipType" required>
+                <option value="full-time">Full-time</option>
+                <option value="part-time">Part-time</option>
+                <option value="remote">Remote</option>
+                <option value="on-site">On-site</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="startDate">Preferred Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+        </div>
+
+        <!-- Additional Information Section -->
+        <div class="form-group">
+            <label for="skills">Skills and Qualifications:</label>
+            <textarea id="skills" name="skills" rows="5" required placeholder="Enter your skills and qualifications for the internship"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="motivation">Why do you want this internship?</label>
+            <textarea id="motivation" name="motivation" rows="5" required placeholder="Explain why you're interested in this internship"></textarea>
+        </div>
+
+        <!-- File Upload Section -->
+        <div class="form-group">
+            <label for="resume">Upload Resume (PDF):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-actions">
+            <input type="submit" value="Submit Application">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
